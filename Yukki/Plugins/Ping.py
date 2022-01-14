@@ -12,7 +12,7 @@ from Yukki.Utilities.ping import get_readable_time
 __MODULE__ = "Ping"
 __HELP__ = """
 
-/ping - Check if Bot is alive or not.
+/ping - SKY X BOT ALIVE CHECK @CODESFRU 🎇 .
 """
 
 
@@ -34,7 +34,7 @@ async def ping(_, message):
     start = datetime.now()
     response = await message.reply_photo(
         photo="Utils/Query.jpg",
-        caption=">> Pong!",
+        caption=">> ❤️‍🔥Pong!",
     )
     uptime = await bot_sys_stats()
     end = datetime.now()
