@@ -30,7 +30,7 @@ HELPABLE = {}
 
 async def initiate_bot():
     with console.status(
-        "[magenta] Booting up The Yukki Music Bot...",
+        "[magenta] ReBooting up The SKY X Music Bot...",
     ) as status:
         console.print("┌ [red]Clearing MongoDB cache...")
         try:
@@ -102,76 +102,76 @@ async def initiate_bot():
     try:
         await ASS_CLI_1.send_message(
             LOG_GROUP_ID,
-            "<b>Congrats!! Assistant Client 1 has started successfully!</b>",
+            "<b>Congrats!! Assistant Client 1 has started successfully☘️✨!</b>",
         )
     except Exception as e:
         print(
-            "Assistant Account 1 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
+            "SKY X Assistant Account 1 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
         )
         console.print(f"\n[red]Stopping Bot")
         return
     try:
-        await ASS_CLI_1.join_chat("OfficialYukki")
+        await ASS_CLI_1.join_chat("codesfru")
     except:
         pass
     try:
         await ASS_CLI_2.send_message(
             LOG_GROUP_ID,
-            "<b>Congrats!! Assistant Client 2 has started successfully!</b>",
+            "<b>Congrats!! Assistant Client 2 has started successfully☘️✨!</b>",
         )
     except Exception as e:
         print(
-            "Assistant Account 2 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
+            "SKY X Assistant Account 2 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
         )
         console.print(f"\n[red]Stopping Bot")
         return
     try:
-        await ASS_CLI_2.join_chat("OfficialYukki")
+        await ASS_CLI_2.join_chat("codesfru")
     except:
         pass
     try:
         await ASS_CLI_3.send_message(
             LOG_GROUP_ID,
-            "<b>Congrats!! Assistant Client 3 has started successfully!</b>",
+            "<b>Congrats!! Assistant Client 3 has started successfully☘️✨!</b>",
         )
     except Exception as e:
         print(
-            "Assistant Account 3 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
+            "SKY XAssistant Account 3 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
         )
         console.print(f"\n[red]Stopping Bot")
         return
     try:
-        await ASS_CLI_3.join_chat("OfficialYukki")
+        await ASS_CLI_3.join_chat("codesfru")
     except:
         pass
     try:
         await ASS_CLI_4.send_message(
             LOG_GROUP_ID,
-            "<b>Congrats!! Assistant Client 4 has started successfully!</b>",
+            "<b>Congrats!! Assistant Client 4 has started successfully☘️✨!</b>",
         )
     except Exception as e:
         print(
-            "Assistant Account 4 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
+            "SKY X Assistant Account 4 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
         )
         console.print(f"\n[red]Stopping Bot")
         return
     try:
-        await ASS_CLI_4.join_chat("OfficialYukki")
+        await ASS_CLI_4.join_chat("codesfru")
     except:
         pass
     try:
         await ASS_CLI_5.send_message(
             LOG_GROUP_ID,
-            "<b>Congrats!! Assistant Client 5 has started successfully!</b>",
+            "<b>Congrats!! SKY X Assistant 5 has started successfully☘️✨!</b>",
         )
     except Exception as e:
         print(
-            "Assistant Account 5 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
+            "SKY X Assistant Account 5 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
         )
         console.print(f"\n[red]Stopping Bot")
         return
     try:
-        await ASS_CLI_5.join_chat("OfficialYukki")
+        await ASS_CLI_5.join_chat("codesfru")
     except:
         pass
     console.print(f"\n┌[red] Bot Started as {BOT_NAME}!")
@@ -196,10 +196,10 @@ async def initiate_bot():
 
 
 home_text_pm = f"""Hello ,
-My name is {BOT_NAME}.
-I'm Telegram Voice Chat Audio with some useful features.
+My self {BOT_NAME}.
+me known as telegram voice chat music bot by @codesfru ☘️✨.
 
-All commands can be used with: / """
+Use the commands below to use me: / """
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -239,7 +239,7 @@ async def start_command(_, message):
                 reply_markup=keyboard,
             )
         if name[0] == "i":
-            m = await message.reply_text("🔎 Fetching Info!")
+            m = await message.reply_text("✳️Fetching Info!")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -264,7 +264,7 @@ async def start_command(_, message):
 📎**Channel Link:** [Visit From Here]({channellink})
 🔗**Video Link:** [Link]({link})
 
-⚡️ __Searched Powered By {BOT_NAME}t__"""
+🎇 __Searched Powered By {BOT_NAME}t__"""
             key = InlineKeyboardMarkup(
                 [
                     [
@@ -332,7 +332,7 @@ All commands can be used with: /
         module = mod_match.group(1)
         text = (
             "{} **{}**:\n".format(
-                "Here is the help for", HELPABLE[module].__MODULE__
+                "THere is the help for", HELPABLE[module].__MODULE__
             )
             + HELPABLE[module].__HELP__
         )
@@ -340,10 +340,10 @@ All commands can be used with: /
             [
                 [
                     InlineKeyboardButton(
-                        text="↪️ Back", callback_data="help_back"
+                        text="🎇Back", callback_data="help_back"
                     ),
                     InlineKeyboardButton(
-                        text="🔄 Close", callback_data="close"
+                        text="🎇Close", callback_data="close"
                     ),
                 ],
             ]
